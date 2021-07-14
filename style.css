@@ -1,5 +1,5 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /* common styles */
 body{
     font-family: 'Poppins', sans-serif;
@@ -150,6 +150,10 @@ margin-right: 30px;
 .messi-image img{
     width:90%
 }
+.live-show
+{
+    color: white;
+}
 
 /* bottom section
  */
@@ -167,5 +171,50 @@ margin-right: 30px;
     {
         display: flex;
         justify-content: center;
+        
+    }
+
+    /* ---------Media queris -----*/
+    /* Mobile devices */
+    @media only screen and (max-width:688px) {
+        .container
+        {
+            width:100%;
+        }
+        .players
+        {
+            grid-template-columns: repeat(1,1fr);
+            
+            
+        }
+        .player
+        {
+            flex-direction: column;
+        }
+        .top-section{
+            
+            flex-direction: column;
+        }
+        .menu
+        {
+            flex-direction: column;
+        }
+        .top-bottom
+        {
+             grid-template-columns: repeat(1,1fr);
+        }
+        .photo-frame
+        {
+            flex-direction: column;
+        }
+        footer
+        {
+            grid-template-columns: repeat(1,1fr);
+
+        }
+        .social-icon
+        {flex-direction: column;}
+
+
         
     }
